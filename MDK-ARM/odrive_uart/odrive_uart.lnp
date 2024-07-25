@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"odrive_uart\startup_stm32f103xb.o"
+"odrive_uart\main.o"
+"odrive_uart\stm32f1xx_it.o"
+"odrive_uart\stm32f1xx_hal_msp.o"
+"odrive_uart\stm32f1xx_hal_gpio_ex.o"
+"odrive_uart\stm32f1xx_hal_tim.o"
+"odrive_uart\stm32f1xx_hal_tim_ex.o"
+"odrive_uart\stm32f1xx_hal_uart.o"
+"odrive_uart\stm32f1xx_hal.o"
+"odrive_uart\stm32f1xx_hal_rcc.o"
+"odrive_uart\stm32f1xx_hal_rcc_ex.o"
+"odrive_uart\stm32f1xx_hal_gpio.o"
+"odrive_uart\stm32f1xx_hal_dma.o"
+"odrive_uart\stm32f1xx_hal_cortex.o"
+"odrive_uart\stm32f1xx_hal_pwr.o"
+"odrive_uart\stm32f1xx_hal_flash.o"
+"odrive_uart\stm32f1xx_hal_flash_ex.o"
+"odrive_uart\stm32f1xx_hal_exti.o"
+"odrive_uart\system_stm32f1xx.o"
+"odrive_uart\uart.o"
+--strict --scatter "odrive_uart\odrive_uart.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "odrive_uart.map" -o odrive_uart\odrive_uart.axf
